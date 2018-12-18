@@ -74,7 +74,7 @@ class AppClient extends OmmProviderClient {
 object NiProvider {
     //The application parameters
     var nipNode: String = "Provider_1"
-    var service: String = "DIRECT_FEED"
+    var service: String = "NI_PUB"
     var user: String = "user"
     var itemName: String = "DUMMY.N"
     var updateTimes: Int = 10  //publish 10 update messages
@@ -111,8 +111,8 @@ object NiProvider {
     val help: String =  
          "command option list:\n" +
         "    -nipNode <NiProviderName>         					The Name of NiProvider node in EmaConfig.xml. The default is Provider_1.\n" +
-        "																			 					The node contains the ip and port of ADH server(s) where the application connects to\n"
-        "    -service <service_name>           					The Service name. The default is DIRECT_FEED.\n" +
+        "									The node contains the ip and port of ADH server(s) where the application connects to\n" +
+        "    -service <service_name>           					The Service name. The default is NI_PUB.\n" +
         "    -user <name>                      					The Name of application user. The default is user.\n" +
         "    -domainType <domain_type>         					The Domain Type of the published item. The default is MARKET_PRICE.\n" +
         "                                     	 				The valid Domain Types supported by this application are:\n" +
