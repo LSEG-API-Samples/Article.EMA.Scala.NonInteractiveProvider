@@ -288,8 +288,15 @@ object NiProvider {
      println();
   }
    def main (args:Array[String]) {
+     
+     //Extract program parameters from the command line.
      getCommandLineOptions(args);
+	  
+     //Show all parameters used by the application
      showAllParameters();
+     
+     //EMA part to listen to the login events/connection events, publish data
+     //according to the parameters from the command line
      var config: OmmNiProviderConfig = null
      var provider: OmmProvider = null
      val nipClient: AppClient  = new AppClient()
